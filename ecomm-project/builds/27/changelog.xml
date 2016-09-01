@@ -1,0 +1,11 @@
+commit 25df9462fe909edb561ed63e57805b3bfd40b607
+tree 11c12b683088e77b6b94eba5227aad59c41e7a4e
+parent 074b01f4e6b358796b50c77b61958d5caed3bc26
+author kuldeepdarmwal <kdarmwal24@gmail.com> 2016-08-31 17:15:45 +0530
+committer GitHub <noreply@github.com> 2016-08-31 17:15:45 +0530
+
+    Update sonar-project.properties
+
+
+
+:100644 100644 c21993e84a8ae0ae8802312f0fc0e3a67a53bc15 d20e6a7b14c6ca15fce62372026bec94da2a18b2 M	ecomm/sonar-project.properties

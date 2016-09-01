@@ -1,0 +1,37 @@
+Started by user [8mha:AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building remotely on [8mha:AAAAqx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzREgZ5/eT83ILSktQi/dRkI93inMSyVF0zQxMzc/NkSxMLAwCC445m1AAAAA==[0mec2-slave-614677c9480 (cb-jnlp) in workspace /home/jenkins/workspace/ecomm-project
+Cloning the remote Git repository
+Cloning repository https://github.com/kuldeepdarmwal/semaphore-php.git
+ > git init /home/jenkins/workspace/ecomm-project # timeout=10
+Fetching upstream changes from https://github.com/kuldeepdarmwal/semaphore-php.git
+ > git --version # timeout=10
+using .gitcredentials to set credentials
+ > git config --local credential.username kuldeepdarmwal # timeout=10
+ > git config --local credential.helper store --file=/tmp/git8227438339432278656.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/kuldeepdarmwal/semaphore-php.git +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git config remote.origin.url https://github.com/kuldeepdarmwal/semaphore-php.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/kuldeepdarmwal/semaphore-php.git # timeout=10
+Fetching upstream changes from https://github.com/kuldeepdarmwal/semaphore-php.git
+using .gitcredentials to set credentials
+ > git config --local credential.username kuldeepdarmwal # timeout=10
+ > git config --local credential.helper store --file=/tmp/git7181883098852896907.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/kuldeepdarmwal/semaphore-php.git +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 4af2e2f7eb17f66ab8233ce01a80925a6e69809c (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 4af2e2f7eb17f66ab8233ce01a80925a6e69809c
+ > git rev-list 4af2e2f7eb17f66ab8233ce01a80925a6e69809c # timeout=10
+[ecomm-project] $ /bin/sh -xe /tmp/hudson5164073543599252997.sh
++ echo hello
+hello
++ java -version
+openjdk version "1.8.0_45-internal"
+OpenJDK Runtime Environment (build 1.8.0_45-internal-b14)
+OpenJDK 64-Bit Server VM (build 25.45-b02, mixed mode)
++ ant -version
+Apache Ant(TM) version 1.9.7 compiled on April 9 2016
+Finished: SUCCESS

@@ -1,0 +1,38 @@
+Started by user [8mha:AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building remotely on [8mha:AAAAtB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy5EgYN/eT83ILSktQi/azUvOzMvGKF4pzEslQFR19PBY1MXQMTw8SkZGNTTQAj6IcE3QAAAA==[0mjenkins slave AMI (i-041abc35) (jenkins-slave) in workspace /var/jenkins/workspace/ecomm-project
+Cloning the remote Git repository
+Cloning repository https://github.com/kuldeepdarmwal/ecomm.git
+ > git init /var/jenkins/workspace/ecomm-project # timeout=10
+Fetching upstream changes from https://github.com/kuldeepdarmwal/ecomm.git
+ > git --version # timeout=10
+using .gitcredentials to set credentials
+ > git config --local credential.username kuldeepdarmwal # timeout=10
+ > git config --local credential.helper store --file=/tmp/git2495701017446070678.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/kuldeepdarmwal/ecomm.git +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git config remote.origin.url https://github.com/kuldeepdarmwal/ecomm.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/kuldeepdarmwal/ecomm.git # timeout=10
+Fetching upstream changes from https://github.com/kuldeepdarmwal/ecomm.git
+using .gitcredentials to set credentials
+ > git config --local credential.username kuldeepdarmwal # timeout=10
+ > git config --local credential.helper store --file=/tmp/git5448004007812202573.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/kuldeepdarmwal/ecomm.git +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 8169dc1f474b7ec64a578d178e4625980289f79c (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 8169dc1f474b7ec64a578d178e4625980289f79c
+ > git rev-list 8169dc1f474b7ec64a578d178e4625980289f79c # timeout=10
+[ecomm-project] $ /bin/sh -xe /tmp/hudson8529523053451249029.sh
++ echo hello
+hello
++ java -version
+java version "1.7.0_111"
+OpenJDK Runtime Environment (IcedTea 2.6.7) (7u111-2.6.7-0ubuntu0.14.04.3)
+OpenJDK 64-Bit Server VM (build 24.111-b01, mixed mode)
++ ant -version
+/tmp/hudson8529523053451249029.sh: 4: /tmp/hudson8529523053451249029.sh: ant: not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

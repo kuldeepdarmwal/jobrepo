@@ -1,0 +1,311 @@
+Started by user [8mha:AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building remotely on [8mha:AAAAtB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy5EgYN/eT83ILSktQi/azUvOzMvGKF4pzEslQFR19PBY1M3ZREQ9Mkk9QkTQCQ4fFq3QAAAA==[0mjenkins slave AMI (i-da15b4eb) (jenkins-slave) in workspace /var/jenkins/workspace/ecomm-project
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/kuldeepdarmwal/ecommdatabasecd.git # timeout=10
+Fetching upstream changes from https://github.com/kuldeepdarmwal/ecommdatabasecd.git
+ > git --version # timeout=10
+using .gitcredentials to set credentials
+ > git config --local credential.username kuldeepdarmwal # timeout=10
+ > git config --local credential.helper store --file=/tmp/git2804512391633621478.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/kuldeepdarmwal/ecommdatabasecd.git +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision a31450f2fc35983cbd064f973b8b0374e1a568f3 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f a31450f2fc35983cbd064f973b8b0374e1a568f3
+ > git rev-list a31450f2fc35983cbd064f973b8b0374e1a568f3 # timeout=10
+[ecomm-project] $ /bin/sh -xe /tmp/hudson6579870474834957003.sh
++ echo hello
+hello
++ java -version
+java version "1.7.0_111"
+OpenJDK Runtime Environment (IcedTea 2.6.7) (7u111-2.6.7-0ubuntu0.14.04.3)
+OpenJDK 64-Bit Server VM (build 24.111-b01, mixed mode)
++ ant -version
+Unable to locate tools.jar. Expected to find it in /usr/lib/jvm/java-7-openjdk-amd64/lib/tools.jar
+Apache Ant(TM) version 1.9.3 compiled on April 8 2014
+[ecomm] $ ant -file build.xml build
+Unable to locate tools.jar. Expected to find it in /usr/lib/jvm/java-7-openjdk-amd64/lib/tools.jar
+Buildfile: /var/jenkins/workspace/ecomm-project/ecomm/build.xml
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mclean:
+   [delete] Deleting directory /var/jenkins/workspace/ecomm-project/ecomm/build/api
+   [delete] Deleting directory /var/jenkins/workspace/ecomm-project/ecomm/build/coverage
+   [delete] Deleting directory /var/jenkins/workspace/ecomm-project/ecomm/build/logs
+   [delete] Deleting directory /var/jenkins/workspace/ecomm-project/ecomm/build/pdepend
+   [delete] Deleting directory /var/jenkins/workspace/ecomm-project/ecomm/build/phpdox
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mgenerate-code:
+     [exec] phpab 1.14.1 - Copyright (C) 2009 - 2016 by Arne Blankerts
+     [exec] 
+     [exec] Scanning directory output
+     [exec] 
+     [exec] Error while processing request:
+     [exec]  - Path 'output' does not exist.
+     [exec] Result: 1
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mprepare:
+    [mkdir] Created dir: /var/jenkins/workspace/ecomm-project/ecomm/build/api
+    [mkdir] Created dir: /var/jenkins/workspace/ecomm-project/ecomm/build/coverage
+    [mkdir] Created dir: /var/jenkins/workspace/ecomm-project/ecomm/build/logs
+    [mkdir] Created dir: /var/jenkins/workspace/ecomm-project/ecomm/build/pdepend
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mphploc:
+     [exec] phploc 2.0.4 by Sebastian Bergmann.
+     [exec] 
+     [exec] Directories                                          1
+     [exec] Files                                               49
+     [exec] 
+     [exec] Size
+     [exec]   Lines of Code (LOC)                             1602
+     [exec]   Comment Lines of Code (CLOC)                     198 (12.36%)
+     [exec]   Non-Comment Lines of Code (NCLOC)               1404 (87.64%)
+     [exec]   Logical Lines of Code (LLOC)                     473 (29.53%)
+     [exec]     Classes                                         99 (20.93%)
+     [exec]       Average Class Length                          14
+     [exec]       Average Method Length                          4
+     [exec]     Functions                                        4 (0.85%)
+     [exec]       Average Function Length                        0
+     [exec]     Not in classes or functions                    370 (78.22%)
+     [exec] 
+     [exec] Complexity
+     [exec]   Cyclomatic Complexity / LLOC                    0.21
+     [exec]   Cyclomatic Complexity / Number of Methods       2.61
+     [exec] 
+     [exec] Dependencies
+     [exec]   Global Accesses                                   51
+     [exec]     Global Constants                                 0 (0.00%)
+     [exec]     Global Variables                                 0 (0.00%)
+     [exec]     Super-Global Variables                          51 (100.00%)
+     [exec]   Attribute Accesses                                17
+     [exec]     Non-Static                                      17 (100.00%)
+     [exec]     Static                                           0 (0.00%)
+     [exec]   Method Calls                                      69
+     [exec]     Non-Static                                      65 (94.20%)
+     [exec]     Static                                           4 (5.80%)
+     [exec] 
+     [exec] Structure
+     [exec]   Namespaces                                         0
+     [exec]   Interfaces                                         0
+     [exec]   Traits                                             0
+     [exec]   Classes                                            7
+     [exec]     Abstract Classes                                 0 (0.00%)
+     [exec]     Concrete Classes                                 7 (100.00%)
+     [exec]   Methods                                           23
+     [exec]     Scope
+     [exec]       Non-Static Methods                            23 (100.00%)
+     [exec]       Static Methods                                 0 (0.00%)
+     [exec]     Visibility
+     [exec]       Public Method                                 23 (100.00%)
+     [exec]       Non-Public Methods                             0 (0.00%)
+     [exec]   Functions                                          0
+     [exec]     Named Functions                                  0 (0.00%)
+     [exec]     Anonymous Functions                              0 (0.00%)
+     [exec]   Constants                                          1
+     [exec]     Global Constants                                 0 (0.00%)
+     [exec]     Class Constants                                  1 (100.00%)
+     [exec] 
+     [exec] Tests
+     [exec]   Classes                                            1
+     [exec]   Methods                                            4
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mpdepend:
+     [exec] PHP_Depend 1.1.4 by Manuel Pichler
+     [exec] 
+     [exec] Parsing source files:
+     [exec] ................................................                48
+     [exec] 
+     [exec] Executing Coupling-Analyzer:
+     [exec] .                                                               40
+     [exec] 
+     [exec] Executing CyclomaticComplexity-Analyzer:
+     [exec] ..                                                              42
+     [exec] 
+     [exec] Executing Dependency-Analyzer:
+     [exec] .                                                               32
+     [exec] 
+     [exec] Executing Inheritance-Analyzer:
+     [exec]                                                                  8
+     [exec] 
+     [exec] Executing NodeCount-Analyzer:
+     [exec] .                                                               31
+     [exec] 
+     [exec] Executing NodeLoc-Analyzer:
+     [exec] .                                                               39
+     [exec] 
+     [exec] Generating pdepend log files, this may take a moment.
+     [exec] 
+     [exec] Time: 00:01; Memory: 13.75Mb
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mphpmd-ci:
+     [exec] Result: 2
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mphpcs-ci:
+     [exec] Result: 1
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mphpcpd:
+     [exec] phpcpd 2.0.0 by Sebastian Bergmann.
+     [exec] 
+     [exec] 0.00% duplicated lines out of 1578 total lines of code.
+     [exec] 
+     [exec] Time: 41 ms, Memory: 3.50Mb
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mphpunit:
+     [exec] PHPUnit 4.1.1 by Sebastian Bergmann.
+     [exec] 
+     [exec] Configuration read from /var/jenkins/workspace/ecomm-project/ecomm/build/phpunit.xml
+     [exec] 
+     [exec] ....
+     [exec] 
+     [exec] Time: 72 ms, Memory: 8.25Mb
+     [exec] 
+     [exec] OK (4 tests, 4 assertions)
+     [exec] 
+     [exec] Generating code coverage report in Clover XML format ... done
+     [exec] 
+     [exec] Generating Crap4J report XML file ... done
+     [exec] 
+     [exec] Generating code coverage report in HTML format ... done
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mphpdox:
+     [exec] phpDox 0.6.5 - Copyright (C) 2010 - 2016 by Arne Blankerts
+     [exec] 
+     [exec] [31.08.2016 - 11:58:22] Using config file './phpdox.xml'
+     [exec] [31.08.2016 - 11:58:22] Registered enricher 'build'
+     [exec] [31.08.2016 - 11:58:22] Registered enricher 'git'
+     [exec] [31.08.2016 - 11:58:22] Registered enricher 'checkstyle'
+     [exec] [31.08.2016 - 11:58:22] Registered enricher 'pmd'
+     [exec] [31.08.2016 - 11:58:22] Registered enricher 'phpunit'
+     [exec] [31.08.2016 - 11:58:22] Registered enricher 'phploc'
+     [exec] [31.08.2016 - 11:58:22] Registered output engine 'xml'
+     [exec] [31.08.2016 - 11:58:22] Registered output engine 'html'
+     [exec] [31.08.2016 - 11:58:22] Starting to process project 'Ecomm'
+     [exec] [31.08.2016 - 11:58:22] Starting collector
+     [exec] [31.08.2016 - 11:58:22] Scanning directory '../ecomm_project' for files to process
+     [exec] 
+     [exec] ................................................  	[48]
+     [exec] 
+     [exec] [31.08.2016 - 11:58:22] Saving results to directory 'phpdox'
+     [exec] [31.08.2016 - 11:58:22] Resolving inheritance
+     [exec] 
+     [exec] .......                                           	[7]
+     [exec] 
+     [exec] [31.08.2016 - 11:58:22] Collector process completed
+     [exec] 
+     [exec] [31.08.2016 - 11:58:22] Starting generator
+     [exec] [31.08.2016 - 11:58:22] Loading enrichers
+     [exec] [31.08.2016 - 11:58:22] Enricher Build Information initialized successfully
+     [exec] [31.08.2016 - 11:58:22] Enricher GIT information initialized successfully
+     [exec] [31.08.2016 - 11:58:22] Enricher PHPLoc xml initialized successfully
+     [exec] [31.08.2016 - 11:58:22] Enricher CheckStyle XML initialized successfully
+     [exec] [31.08.2016 - 11:58:22] Enricher PHPMessDetector XML initialized successfully
+     [exec] [31.08.2016 - 11:58:22] Starting event loop.
+     [exec] 
+     [exec] ..................................................	[50]
+     [exec] ..                                                	[52]
+     [exec] 
+     [exec] [31.08.2016 - 11:58:22] Generator process completed
+     [exec] [31.08.2016 - 11:58:22] Processing project 'Ecomm' completed.
+     [exec] 
+     [exec] 
+     [exec] Time: 0 seconds, Memory: 7.25Mb
+     [exec] 
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mzip:
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD SUCCESSFUL
+Total time: 3 seconds
+[ecomm-project] $ /var/jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/jenkins_slave/bin/sonar-runner -e -Dsonar.jdbc.url=jdbc:mysql://sonar-db.clbdj44v7c4x.us-east-1.rds.amazonaws.com:3306/sonar?autoReconnect=true&useUnicode=true&characterEncoding=utf8 ******** ******** -Dsonar.host.url=http://54.89.136.135:9000/ ******** ******** -Dproject.settings=/var/jenkins/workspace/ecomm-project/ecomm/sonar-project.properties -Dsonar.projectBaseDir=/var/jenkins/workspace/ecomm-project
+SonarQube Runner 2.4
+Java 1.7.0_111 Oracle Corporation (64-bit)
+Linux 3.13.0-91-generic amd64
+INFO: Error stacktraces are turned on.
+INFO: Runner configuration file: /var/jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/jenkins_slave/conf/sonar-runner.properties
+INFO: Project configuration file: /var/jenkins/workspace/ecomm-project/ecomm/sonar-project.properties
+INFO: Default locale: "en_US", source code encoding: "UTF-8"
+INFO: Work directory: /var/jenkins/workspace/ecomm-project/.sonar
+INFO: SonarQube Server 4.5.7
+11:58:23.581 INFO  - Load global referentials...
+11:58:23.803 INFO  - Load global referentials done: 224 ms
+11:58:23.814 INFO  - User cache: /home/ubuntu/.sonar/cache
+11:58:23.824 INFO  - Install plugins
+11:58:23.894 INFO  - Install JDBC driver
+11:58:23.903 INFO  - Create JDBC datasource for jdbc:mysql://sonar-db.clbdj44v7c4x.us-east-1.rds.amazonaws.com:3306/sonar?autoReconnect=true&useUnicode=true&characterEncoding=utf8
+11:58:25.982 INFO  - Initializing Hibernate
+11:58:28.057 INFO  - Load project referentials...
+11:58:28.259 INFO  - Load project referentials done: 202 ms
+11:58:28.266 INFO  - Load project settings
+11:58:28.694 INFO  - Loading technical debt model...
+11:58:28.717 INFO  - Loading technical debt model done: 23 ms
+11:58:28.720 INFO  - Apply project exclusions
+11:58:28.941 INFO  - -------------  Scan gandhark
+11:58:28.950 INFO  - Load module settings
+11:58:29.457 INFO  - Language is forced to php
+11:58:29.459 INFO  - Loading rules...
+11:58:30.750 INFO  - Loading rules done: 1291 ms
+11:58:30.792 INFO  - Configure Maven plugins
+11:58:31.031 INFO  - Compare to previous analysis (2016-08-31)
+11:58:31.068 INFO  - Compare over 30 days (2016-08-01, analysis of 2016-08-31 11:51:17.0)
+11:58:31.070 INFO  - No quality gate is configured.
+11:58:31.359 INFO  - Base dir: /var/jenkins/workspace/ecomm-project
+11:58:31.362 INFO  - Working dir: /var/jenkins/workspace/ecomm-project/.sonar
+11:58:31.362 INFO  - Source paths: ecomm/ecomm_project
+11:58:31.362 INFO  - Source encoding: UTF-8, default locale: en_US
+11:58:31.363 INFO  - Index files
+11:58:32.458 INFO  - 48 files indexed
+11:58:33.298 INFO  - Quality profile for php: Sonar way
+11:58:33.376 INFO  - Sensor NoSonar and Commented out LOC Sensor...
+11:58:33.500 INFO  - Sensor NoSonar and Commented out LOC Sensor done: 124 ms
+11:58:33.501 INFO  - Sensor QProfileSensor...
+11:58:33.505 INFO  - Sensor QProfileSensor done: 4 ms
+11:58:33.510 INFO  - Sensor PHPSensor...
+11:58:33.943 INFO  - 48 source files to be analyzed
+11:58:36.268 INFO  - 48/48 source files have been analyzed
+11:58:36.268 INFO  - Sensor PHPSensor done: 2758 ms
+11:58:36.269 INFO  - Sensor PHPUnit Sensor...
+11:58:36.269 INFO  - No PHPUnit test report provided (see 'sonar.php.tests.reportPath' property)
+11:58:36.269 INFO  - No PHPUnit unit test coverage report provided (see 'sonar.php.coverage.reportPath' property)
+11:58:36.269 INFO  - No PHPUnit integration test coverage report provided (see 'sonar.php.coverage.itReportPath' property)
+11:58:36.269 INFO  - No PHPUnit overall coverage report provided (see 'sonar.php.coverage.overallReportPath' property)
+11:58:36.270 INFO  - Sensor PHPUnit Sensor done: 0 ms
+11:58:36.270 INFO  - Sensor InitialOpenIssuesSensor...
+11:58:36.317 INFO  - Sensor InitialOpenIssuesSensor done: 47 ms
+11:58:36.317 INFO  - Sensor ProjectLinksSensor...
+11:58:36.323 INFO  - Sensor ProjectLinksSensor done: 5 ms
+11:58:36.326 INFO  - Sensor VersionEventsSensor...
+11:58:36.352 INFO  - Sensor VersionEventsSensor done: 26 ms
+11:58:36.352 INFO  - Sensor FileHashSensor...
+11:58:36.372 INFO  - Sensor FileHashSensor done: 20 ms
+11:58:36.373 INFO  - Sensor CPD Sensor (wrapped)...
+11:58:36.373 INFO  - DefaultCpdEngine is used for php
+11:58:36.387 INFO  - Cross-project analysis disabled
+11:58:36.746 INFO  - Sensor CPD Sensor (wrapped) done: 373 ms
+11:58:37.298 INFO  - Execute decorators...
+11:58:38.647 INFO  - Store results in database
+11:58:40.965 INFO  - ANALYSIS SUCCESSFUL, you can browse http://54.89.136.135:9000/dashboard/index/gandhark
+11:58:41.031 INFO  - Executing post-job class org.sonar.plugins.core.issue.notification.SendIssueNotificationsPostJob
+11:58:41.033 INFO  - Executing post-job class org.sonar.plugins.core.batch.IndexProjectPostJob
+11:58:41.065 INFO  - Executing post-job class org.sonar.plugins.dbcleaner.ProjectPurgePostJob
+11:58:41.082 INFO  - -> Keep one snapshot per day between 2016-08-03 and 2016-08-30
+11:58:41.083 INFO  - -> Keep one snapshot per week between 2015-09-02 and 2016-08-03
+11:58:41.084 INFO  - -> Keep one snapshot per month between 2011-09-07 and 2015-09-02
+11:58:41.084 INFO  - -> Delete data prior to: 2011-09-07
+11:58:41.101 INFO  - -> Clean gandhark [id=52]
+11:58:41.107 INFO  - <- Clean snapshot 203
+INFO: ------------------------------------------------------------------------
+INFO: EXECUTION SUCCESS
+INFO: ------------------------------------------------------------------------
+Total time: 18.360s
+Final Memory: 13M/125M
+INFO: ------------------------------------------------------------------------
+[ecomm-project] $ /bin/sh -xe /tmp/hudson1147229991686194717.sh
++ whoami
+ubuntu
+[ecomm-project] $ docker build -t kuldeepdarmwal/ecomm-app-docker:33 --pull=true /var/jenkins/workspace/ecomm-project
+Cannot connect to the Docker daemon. Is the docker daemon running on this host?
+Build step 'Docker Build and Publish' marked build as failure
+Finished: FAILURE

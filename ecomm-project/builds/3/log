@@ -1,0 +1,83 @@
+Started by user [8mha:AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building remotely on [8mha:AAAArB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyxEgYF/eT83ILSktQi/dRkI93inMSyVF3DtCQLI1Mzg8SkRGMAMzhXvtUAAAA=[0mec2-slave-1fb82560aba3 (jenkinsci/jnlp-slave-test1) in workspace /home/jenkins/workspace/ecomm-project
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/kuldeepdarmwal/semaphore-php.git # timeout=10
+Fetching upstream changes from https://github.com/kuldeepdarmwal/semaphore-php.git
+ > git --version # timeout=10
+using .gitcredentials to set credentials
+ > git config --local credential.username kuldeepdarmwal # timeout=10
+ > git config --local credential.helper store --file=/tmp/git5480720464694448384.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/kuldeepdarmwal/semaphore-php.git +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 4af2e2f7eb17f66ab8233ce01a80925a6e69809c (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 4af2e2f7eb17f66ab8233ce01a80925a6e69809c
+ > git rev-list 4af2e2f7eb17f66ab8233ce01a80925a6e69809c # timeout=10
+[ecomm-project] $ /bin/sh -xe /tmp/hudson2177185173959900183.sh
++ echo hello
+hello
++ java -version
+openjdk version "1.8.0_102"
+OpenJDK Runtime Environment (build 1.8.0_102-8u102-b14.1-1~bpo8+1-b14)
+OpenJDK 64-Bit Server VM (build 25.102-b14, mixed mode)
+[ecomm-project] $ ant Default
+FATAL: command execution failed.Maybe you need to configure the job to choose one of your Ant installations?
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mjava.io.IOException: Cannot run program "ant" (in directory "/home/jenkins/workspace/ecomm-project"): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at hudson.Proc$LocalProc.<init>(Proc.java:244)
+	at hudson.Proc$LocalProc.<init>(Proc.java:216)
+	at hudson.Launcher$LocalLauncher.launch(Launcher.java:815)
+	at hudson.Launcher$ProcStarter.start(Launcher.java:381)
+	at hudson.Launcher$RemoteLaunchCallable.call(Launcher.java:1148)
+	at hudson.Launcher$RemoteLaunchCallable.call(Launcher.java:1113)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:153)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:50)
+	at hudson.remoting.Request$2.run(Request.java:332)
+	at hudson.remoting.InterceptingExecutorService$1.call(InterceptingExecutorService.java:68)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at hudson.remoting.Engine$1$1.run(Engine.java:85)
+	at java.lang.Thread.run(Thread.java:745)
+	at ......remote call to ec2-slave-1fb82560aba3(Native Method)
+	at hudson.remoting.Channel.attachCallSiteStackTrace(Channel.java:1416)
+	at hudson.remoting.UserResponse.retrieve(UserRequest.java:252)
+	at hudson.remoting.Channel.call(Channel.java:781)
+	at hudson.Launcher$RemoteLauncher.launch(Launcher.java:928)
+	at hudson.Launcher$ProcStarter.start(Launcher.java:381)
+	at hudson.Launcher$ProcStarter.join(Launcher.java:388)
+	at hudson.tasks.Ant.perform(Ant.java:217)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:782)
+	at hudson.model.Build$BuildExecution.build(Build.java:205)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:162)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:534)
+	at hudson.model.Run.execute(Run.java:1738)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:98)
+	at hudson.model.Executor.run(Executor.java:410)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:248)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	at hudson.Proc$LocalProc.<init>(Proc.java:244)
+	at hudson.Proc$LocalProc.<init>(Proc.java:216)
+	at hudson.Launcher$LocalLauncher.launch(Launcher.java:815)
+	at hudson.Launcher$ProcStarter.start(Launcher.java:381)
+	at hudson.Launcher$RemoteLaunchCallable.call(Launcher.java:1148)
+	at hudson.Launcher$RemoteLaunchCallable.call(Launcher.java:1113)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:153)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:50)
+	at hudson.remoting.Request$2.run(Request.java:332)
+	at hudson.remoting.InterceptingExecutorService$1.call(InterceptingExecutorService.java:68)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at hudson.remoting.Engine$1$1.run(Engine.java:85)
+	at java.lang.Thread.run(Thread.java:745)
+Build step 'Invoke Ant' marked build as failure
+Finished: FAILURE

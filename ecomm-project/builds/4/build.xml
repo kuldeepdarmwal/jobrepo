@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <com.cloudbees.plugins.deployer.DeployNowRunAction plugin="deployer-framework@1.1">
+      <owner class="build" reference="../../.."/>
+    </com.cloudbees.plugins.deployer.DeployNowRunAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@3.1.2.7">
+      <queuingDurationMillis>13122</queuingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+    <hudson.plugins.git.util.BuildData plugin="git@2.4.4">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@1.19.6">
+              <sha1>4af2e2f7eb17f66ab8233ce01a80925a6e69809c</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>4</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/kuldeepdarmwal/semaphore-php.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@2.4.4">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/home/jenkins/workspace/ecomm-project</ws>
+    </hudson.plugins.git.GitTagAction>
+    <hudson.scm.SCMRevisionState_-None/>
+    <com.cloudbees.opscenter.analytics.reporter.items.NodeUsageInfo_-ActionImpl plugin="operations-center-analytics-reporter@1.8.100">
+      <nodeUsageInfo>
+        <nodeReferences>
+          <com.cloudbees.opscenter.analytics.reporter.items.NodeReference>
+            <timestamp>1471965728919</timestamp>
+            <nodeName>ec2-slave-1fc3ca4c0997</nodeName>
+            <effectiveLabelAtoms>jenkinsci/jnlp-slave-test1</effectiveLabelAtoms>
+          </com.cloudbees.opscenter.analytics.reporter.items.NodeReference>
+        </nodeReferences>
+        <effectiveLabelAtoms>jenkinsci/jnlp-slave-test1 </effectiveLabelAtoms>
+      </nodeUsageInfo>
+    </com.cloudbees.opscenter.analytics.reporter.items.NodeUsageInfo_-ActionImpl>
+  </actions>
+  <queueId>9</queueId>
+  <timestamp>1471965728918</timestamp>
+  <startTime>1471965728919</startTime>
+  <result>SUCCESS</result>
+  <duration>3200</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn>ec2-slave-1fc3ca4c0997</builtOn>
+  <workspace>/home/jenkins/workspace/ecomm-project</workspace>
+  <hudsonVersion>1.651.3.1 (CloudBees Jenkins Enterprise 16.06)</hudsonVersion>
+  <scm class="hudson.plugins.git.GitChangeLogParser" plugin="git@2.4.4">
+    <authorOrCommitter>false</authorOrCommitter>
+  </scm>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

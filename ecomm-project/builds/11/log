@@ -1,0 +1,266 @@
+Started by user [8mha:AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building remotely on [8mha:AAAArB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyxEgYF/eT83ILSktQi/dRkI93inMSyVF1DE5Mki6Q08zRDY0MAjYhBkdUAAAA=[0mec2-slave-144b8bf7f131 (gk) in workspace /home/jenkins/workspace/ecomm-project
+Cloning the remote Git repository
+Cloning repository https://github.com/kuldeepdarmwal/ecomm.git
+ > git init /home/jenkins/workspace/ecomm-project # timeout=10
+Fetching upstream changes from https://github.com/kuldeepdarmwal/ecomm.git
+ > git --version # timeout=10
+using .gitcredentials to set credentials
+ > git config --local credential.username kuldeepdarmwal # timeout=10
+ > git config --local credential.helper store --file=/tmp/git2595945532574831271.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/kuldeepdarmwal/ecomm.git +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git config remote.origin.url https://github.com/kuldeepdarmwal/ecomm.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/kuldeepdarmwal/ecomm.git # timeout=10
+Fetching upstream changes from https://github.com/kuldeepdarmwal/ecomm.git
+using .gitcredentials to set credentials
+ > git config --local credential.username kuldeepdarmwal # timeout=10
+ > git config --local credential.helper store --file=/tmp/git1488131834332946413.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/kuldeepdarmwal/ecomm.git +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 8169dc1f474b7ec64a578d178e4625980289f79c (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 8169dc1f474b7ec64a578d178e4625980289f79c
+ > git rev-list 8169dc1f474b7ec64a578d178e4625980289f79c # timeout=10
+[ecomm-project] $ /bin/sh -xe /tmp/hudson7194991833462524352.sh
++ echo hello
+hello
++ java -version
+openjdk version "1.8.0_45-internal"
+OpenJDK Runtime Environment (build 1.8.0_45-internal-b14)
+OpenJDK 64-Bit Server VM (build 25.45-b02, mixed mode)
++ ant -version
+Apache Ant(TM) version 1.9.7 compiled on April 9 2016
+[ecomm-project] $ ant build
+Buildfile: /home/jenkins/workspace/ecomm-project/build.xml
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mclean:
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mgenerate-code:
+     [exec] phpab 1.14.1 - Copyright (C) 2009 - 2016 by Arne Blankerts
+     [exec] 
+     [exec] Scanning directory output
+     [exec] 
+     [exec] Error while processing request:
+     [exec]  - Path 'output' does not exist.
+     [exec] Result: 1
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mprepare:
+    [mkdir] Created dir: /home/jenkins/workspace/ecomm-project/build/api
+    [mkdir] Created dir: /home/jenkins/workspace/ecomm-project/build/coverage
+    [mkdir] Created dir: /home/jenkins/workspace/ecomm-project/build/logs
+    [mkdir] Created dir: /home/jenkins/workspace/ecomm-project/build/pdepend
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mphploc:
+     [exec] phploc 2.0.4 by Sebastian Bergmann.
+     [exec] 
+     [exec] Directories                                          1
+     [exec] Files                                               48
+     [exec] 
+     [exec] Size
+     [exec]   Lines of Code (LOC)                             1572
+     [exec]   Comment Lines of Code (CLOC)                     203 (12.91%)
+     [exec]   Non-Comment Lines of Code (NCLOC)               1369 (87.09%)
+     [exec]   Logical Lines of Code (LLOC)                     468 (29.77%)
+     [exec]     Classes                                         87 (18.59%)
+     [exec]       Average Class Length                          14
+     [exec]       Average Method Length                          3
+     [exec]     Functions                                       19 (4.06%)
+     [exec]       Average Function Length                        9
+     [exec]     Not in classes or functions                    362 (77.35%)
+     [exec] 
+     [exec] Complexity
+     [exec]   Cyclomatic Complexity / LLOC                    0.20
+     [exec]   Cyclomatic Complexity / Number of Methods       2.27
+     [exec] 
+     [exec] Dependencies
+     [exec]   Global Accesses                                   51
+     [exec]     Global Constants                                 0 (0.00%)
+     [exec]     Global Variables                                 0 (0.00%)
+     [exec]     Super-Global Variables                          51 (100.00%)
+     [exec]   Attribute Accesses                                17
+     [exec]     Non-Static                                      17 (100.00%)
+     [exec]     Static                                           0 (0.00%)
+     [exec]   Method Calls                                      67
+     [exec]     Non-Static                                      63 (94.03%)
+     [exec]     Static                                           4 (5.97%)
+     [exec] 
+     [exec] Structure
+     [exec]   Namespaces                                         0
+     [exec]   Interfaces                                         0
+     [exec]   Traits                                             0
+     [exec]   Classes                                            6
+     [exec]     Abstract Classes                                 0 (0.00%)
+     [exec]     Concrete Classes                                 6 (100.00%)
+     [exec]   Methods                                           22
+     [exec]     Scope
+     [exec]       Non-Static Methods                            22 (100.00%)
+     [exec]       Static Methods                                 0 (0.00%)
+     [exec]     Visibility
+     [exec]       Public Method                                 22 (100.00%)
+     [exec]       Non-Public Methods                             0 (0.00%)
+     [exec]   Functions                                          2
+     [exec]     Named Functions                                  2 (100.00%)
+     [exec]     Anonymous Functions                              0 (0.00%)
+     [exec]   Constants                                          1
+     [exec]     Global Constants                                 0 (0.00%)
+     [exec]     Class Constants                                  1 (100.00%)
+     [exec] 
+     [exec] Tests
+     [exec]   Classes                                            1
+     [exec]   Methods                                            4
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mpdepend:
+     [exec] PHP_Depend 1.1.4 by Manuel Pichler
+     [exec] 
+     [exec] Parsing source files:
+     [exec] ...............................................                 47
+     [exec] 
+     [exec] Executing Coupling-Analyzer:
+     [exec] .                                                               39
+     [exec] 
+     [exec] Executing CyclomaticComplexity-Analyzer:
+     [exec] ..                                                              41
+     [exec] 
+     [exec] Executing Dependency-Analyzer:
+     [exec] .                                                               30
+     [exec] 
+     [exec] Executing Inheritance-Analyzer:
+     [exec]                                                                 14
+     [exec] 
+     [exec] Executing NodeCount-Analyzer:
+     [exec] .                                                               31
+     [exec] 
+     [exec] Executing NodeLoc-Analyzer:
+     [exec] .                                                               39
+     [exec] 
+     [exec] Generating pdepend log files, this may take a moment.
+     [exec] 
+     [exec] Time: 00:01; Memory: 14.50Mb
+     [exec] PHP Warning:  DOMNode::cloneNode(): ID jdepend.good already defined in phar:///home/jenkins/workspace/ecomm-project/build/tools/pdepend.phar/PHP/Depend/Log/Jdepend/Chart.php on line 210
+     [exec] PHP Stack trace:
+     [exec] PHP   1. {main}() /home/jenkins/workspace/ecomm-project/build/tools/pdepend.phar:0
+     [exec] PHP   2. PHP_Depend_TextUI_Command::main() /home/jenkins/workspace/ecomm-project/build/tools/pdepend.phar:68
+     [exec] PHP   3. PHP_Depend_TextUI_Command->run() phar:///home/jenkins/workspace/ecomm-project/build/tools/pdepend.phar/PHP/Depend/TextUI/Command.php:701
+     [exec] PHP   4. PHP_Depend_TextUI_Runner->run() phar:///home/jenkins/workspace/ecomm-project/build/tools/pdepend.phar/PHP/Depend/TextUI/Command.php:207
+     [exec] PHP   5. PHP_Depend->analyze() phar:///home/jenkins/workspace/ecomm-project/build/tools/pdepend.phar/PHP/Depend/TextUI/Runner.php:331
+     [exec] PHP   6. PHP_Depend_Log_Jdepend_Chart->close() phar:///home/jenkins/workspace/ecomm-project/build/tools/pdepend.phar/PHP/Depend.php:328
+     [exec] PHP   7. DOMNode->cloneNode() phar:///home/jenkins/workspace/ecomm-project/build/tools/pdepend.phar/PHP/Depend/Log/Jdepend/Chart.php:210
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mphpmd-ci:
+     [exec] Result: 2
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mphpcs-ci:
+     [exec] Result: 1
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mphpcpd:
+     [exec] phpcpd 2.0.0 by Sebastian Bergmann.
+     [exec] 
+     [exec] 0.00% duplicated lines out of 1548 total lines of code.
+     [exec] 
+     [exec] Time: 38 ms, Memory: 3.25Mb
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mphpunit:
+     [exec] PHPUnit 4.1.1 by Sebastian Bergmann.
+     [exec] 
+     [exec] Configuration read from /home/jenkins/workspace/ecomm-project/build/phpunit.xml
+     [exec] 
+     [exec] ....
+     [exec] 
+     [exec] Time: 68 ms, Memory: 8.25Mb
+     [exec] 
+     [exec] OK (4 tests, 4 assertions)
+     [exec] 
+     [exec] Generating code coverage report in Clover XML format ... done
+     [exec] 
+     [exec] Generating Crap4J report XML file ... done
+     [exec] 
+     [exec] Generating code coverage report in HTML format ... done
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mphpdox:
+     [exec] phpDox 0.7.0 - Copyright (C) 2010 - 2016 by Arne Blankerts
+     [exec] 
+     [exec] [24.08.2016 - 09:40:33] Using config file './phpdox.xml'
+     [exec] [24.08.2016 - 09:40:33] Registered collector backend 'parser'
+     [exec] [24.08.2016 - 09:40:33] Registered enricher 'build'
+     [exec] [24.08.2016 - 09:40:33] Registered enricher 'git'
+     [exec] [24.08.2016 - 09:40:33] Registered enricher 'checkstyle'
+     [exec] [24.08.2016 - 09:40:33] Registered enricher 'phpcs'
+     [exec] [24.08.2016 - 09:40:33] Registered enricher 'pmd'
+     [exec] [24.08.2016 - 09:40:33] Registered enricher 'phpunit'
+     [exec] [24.08.2016 - 09:40:33] Registered enricher 'phploc'
+     [exec] [24.08.2016 - 09:40:33] Registered output engine 'xml'
+     [exec] [24.08.2016 - 09:40:33] Registered output engine 'html'
+     [exec] [24.08.2016 - 09:40:33] Starting to process project 'Ecomm_Pradeep'
+     [exec] [24.08.2016 - 09:40:33] Starting collector
+     [exec] [24.08.2016 - 09:40:33] Scanning directory '../ecomm_project' for files to process
+     [exec] 
+     [exec] ...............................................   	[47]
+     [exec] 
+     [exec] [24.08.2016 - 09:40:33] Saving results to directory 'phpdox'
+     [exec] [24.08.2016 - 09:40:33] Resolving inheritance
+     [exec] 
+     [exec] ......                                            	[6]
+     [exec] 
+     [exec] [24.08.2016 - 09:40:33] Collector process completed
+     [exec] 
+     [exec] [24.08.2016 - 09:40:33] Starting generator
+     [exec] [24.08.2016 - 09:40:33] Loading enrichers
+     [exec] [24.08.2016 - 09:40:33] Enricher Build Information initialized successfully
+     [exec] [24.08.2016 - 09:40:33] Enricher GIT information initialized successfully
+     [exec] [24.08.2016 - 09:40:33] Enricher PHPLoc xml initialized successfully
+     [exec] [24.08.2016 - 09:40:33] Enricher CheckStyle XML initialized successfully
+     [exec] [24.08.2016 - 09:40:33] Enricher PHPMessDetector XML initialized successfully
+     [exec] [24.08.2016 - 09:40:33] Starting event loop.
+     [exec] 
+     [exec] 
+     [exec] 
+     [exec] Oups... phpDox encountered a problem and has terminated!
+     [exec] 
+     [exec] It most likely means you've found a bug, so please file a report for this
+     [exec] and paste the following details and the stacktrace (if given) along:
+     [exec] 
+     [exec] PHP Version: 5.6.4-4ubuntu6.4 (Linux)
+     [exec] PHPDox Version: 0.7.0
+     [exec] Exception: TheSeer\fXSL\fXSLTProcessorException (Code: 2)
+     [exec] Location: phar:///home/jenkins/workspace/ecomm-project/build/tools/phpdox.phar/fXSL-1.0.4/TheSeer/fXSL/fxsltprocessor.php (Line 251)
+     [exec] 
+     [exec] Error while importing given stylesheet
+     [exec] 
+     [exec] [XML-STRING] [Line: 0 - Column: 0] Warning 1549: failed to load external entity "phar:/home/jenkins/workspace/ecomm-project/build/tools/phpdox.phar/templates/html/components.xsl"
+     [exec] [XML-STRING] [Line: 0 - Column: 0] Error 1: compilation error: file phar:///home/jenkins/workspace/ecomm-project/build/tools/phpdox.phar/phpdox/generator/engine/html/../../../../templates/html/class.xsl line 8 element import
+     [exec] [XML-STRING] [Line: 0 - Column: 0] Error 1: xsl:import : unable to load phar:/home/jenkins/workspace/ecomm-project/build/tools/phpdox.phar/templates/html/components.xsl
+     [exec] [XML-STRING] [Line: 0 - Column: 0] Warning 1549: failed to load external entity "phar:/home/jenkins/workspace/ecomm-project/build/tools/phpdox.phar/templates/html/functions.xsl"
+     [exec] [XML-STRING] [Line: 0 - Column: 0] Error 1: compilation error: file phar:///home/jenkins/workspace/ecomm-project/build/tools/phpdox.phar/phpdox/generator/engine/html/../../../../templates/html/class.xsl line 9 element import
+     [exec] [XML-STRING] [Line: 0 - Column: 0] Error 1: xsl:import : unable to load phar:/home/jenkins/workspace/ecomm-project/build/tools/phpdox.phar/templates/html/functions.xsl
+     [exec] [XML-STRING] [Line: 0 - Column: 0] Warning 1549: failed to load external entity "phar:/home/jenkins/workspace/ecomm-project/build/tools/phpdox.phar/templates/html/synopsis.xsl"
+     [exec] [XML-STRING] [Line: 0 - Column: 0] Error 1: compilation error: file phar:///home/jenkins/workspace/ecomm-project/build/tools/phpdox.phar/phpdox/generator/engine/html/../../../../templates/html/class.xsl line 10 element import
+     [exec] [XML-STRING] [Line: 0 - Column: 0] Error 1: xsl:import : unable to load phar:/home/jenkins/workspace/ecomm-project/build/tools/phpdox.phar/templates/html/synopsis.xsl
+     [exec] 
+     [exec] 
+     [exec] #0 phar:///home/jenkins/workspace/ecomm-project/build/tools/phpdox.phar/phpdox/generator/engine/html/Html.php(208): TheSeer\fXSL\fXSLTProcessor->transformToDoc()
+     [exec] #1 unknown(0): TheSeer\phpDox\Generator\Engine\Html->buildClass()
+     [exec] #2 phar:///home/jenkins/workspace/ecomm-project/build/tools/phpdox.phar/phpdox/generator/Generator.php(203): call_user_func()
+     [exec] #3 phar:///home/jenkins/workspace/ecomm-project/build/tools/phpdox.phar/phpdox/generator/Generator.php(277): TheSeer\phpDox\Generator\Generator->handleEvent()
+     [exec] #4 phar:///home/jenkins/workspace/ecomm-project/build/tools/phpdox.phar/phpdox/generator/Generator.php(249): TheSeer\phpDox\Generator\Generator->processClass()
+     [exec] #5 phar:///home/jenkins/workspace/ecomm-project/build/tools/phpdox.phar/phpdox/generator/Generator.php(142): TheSeer\phpDox\Generator\Generator->processWithNamespace()
+     [exec] #6 phar:///home/jenkins/workspace/ecomm-project/build/tools/phpdox.phar/phpdox/Application.php(238): TheSeer\phpDox\Generator\Generator->run()
+     [exec] #7 phar:///home/jenkins/workspace/ecomm-project/build/tools/phpdox.phar/phpdox/CLI.php(152): TheSeer\phpDox\Application->runGenerator()
+     [exec] #8 /home/jenkins/workspace/ecomm-project/build/tools/phpdox.phar(460): TheSeer\phpDox\CLI->run()
+     [exec] 
+     [exec] 
+     [exec] 
+     [exec] ....
+     [exec] Result: 1
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mzip:
+      [zip] Building zip: /home/jenkins/workspace/ecomm-project/ecomm_project.zip
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD SUCCESSFUL
+Total time: 4 seconds
+Finished: SUCCESS

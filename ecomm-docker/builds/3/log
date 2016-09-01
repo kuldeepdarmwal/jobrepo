@@ -1,0 +1,472 @@
+Started by user [8mha:AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building remotely on [8mha:AAAAtB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy5EgYN/eT83ILSktQi/azUvOzMvGKF4pzEslQFR19PBY1M3VTjlFTz1BQjTQCQ0NEv3QAAAA==[0mjenkins slave AMI (i-e3de7ed2) (jenkins-slave) in workspace /var/jenkins/workspace/ecomm-docker
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/kuldeepdarmwal/ecommdatabasecd.git # timeout=10
+Fetching upstream changes from https://github.com/kuldeepdarmwal/ecommdatabasecd.git
+ > git --version # timeout=10
+using .gitcredentials to set credentials
+ > git config --local credential.username kuldeepdarmwal # timeout=10
+ > git config --local credential.helper store --file=/tmp/git3226421410180989222.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/kuldeepdarmwal/ecommdatabasecd.git +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision a31450f2fc35983cbd064f973b8b0374e1a568f3 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f a31450f2fc35983cbd064f973b8b0374e1a568f3
+ > git rev-list a31450f2fc35983cbd064f973b8b0374e1a568f3 # timeout=10
+[ecomm-docker] $ /bin/sh -xe /tmp/hudson6568307490089469869.sh
++ echo hello
+hello
++ java -version
+java version "1.7.0_111"
+OpenJDK Runtime Environment (IcedTea 2.6.7) (7u111-2.6.7-0ubuntu0.14.04.3)
+OpenJDK 64-Bit Server VM (build 24.111-b01, mixed mode)
++ ant -version
+Unable to locate tools.jar. Expected to find it in /usr/lib/jvm/java-7-openjdk-amd64/lib/tools.jar
+Apache Ant(TM) version 1.9.3 compiled on April 8 2014
+[ecomm] $ ant -file build.xml build
+Unable to locate tools.jar. Expected to find it in /usr/lib/jvm/java-7-openjdk-amd64/lib/tools.jar
+Buildfile: /var/jenkins/workspace/ecomm-docker/ecomm/build.xml
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mclean:
+   [delete] Deleting directory /var/jenkins/workspace/ecomm-docker/ecomm/build/api
+   [delete] Deleting directory /var/jenkins/workspace/ecomm-docker/ecomm/build/coverage
+   [delete] Deleting directory /var/jenkins/workspace/ecomm-docker/ecomm/build/logs
+   [delete] Deleting directory /var/jenkins/workspace/ecomm-docker/ecomm/build/pdepend
+   [delete] Deleting directory /var/jenkins/workspace/ecomm-docker/ecomm/build/phpdox
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mgenerate-code:
+     [exec] phpab 1.14.1 - Copyright (C) 2009 - 2016 by Arne Blankerts
+     [exec] 
+     [exec] Scanning directory output
+     [exec] 
+     [exec] Error while processing request:
+     [exec]  - Path 'output' does not exist.
+     [exec] Result: 1
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mprepare:
+    [mkdir] Created dir: /var/jenkins/workspace/ecomm-docker/ecomm/build/api
+    [mkdir] Created dir: /var/jenkins/workspace/ecomm-docker/ecomm/build/coverage
+    [mkdir] Created dir: /var/jenkins/workspace/ecomm-docker/ecomm/build/logs
+    [mkdir] Created dir: /var/jenkins/workspace/ecomm-docker/ecomm/build/pdepend
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mphploc:
+     [exec] phploc 2.0.4 by Sebastian Bergmann.
+     [exec] 
+     [exec] Directories                                          1
+     [exec] Files                                               49
+     [exec] 
+     [exec] Size
+     [exec]   Lines of Code (LOC)                             1602
+     [exec]   Comment Lines of Code (CLOC)                     198 (12.36%)
+     [exec]   Non-Comment Lines of Code (NCLOC)               1404 (87.64%)
+     [exec]   Logical Lines of Code (LLOC)                     473 (29.53%)
+     [exec]     Classes                                         99 (20.93%)
+     [exec]       Average Class Length                          14
+     [exec]       Average Method Length                          4
+     [exec]     Functions                                        4 (0.85%)
+     [exec]       Average Function Length                        0
+     [exec]     Not in classes or functions                    370 (78.22%)
+     [exec] 
+     [exec] Complexity
+     [exec]   Cyclomatic Complexity / LLOC                    0.21
+     [exec]   Cyclomatic Complexity / Number of Methods       2.61
+     [exec] 
+     [exec] Dependencies
+     [exec]   Global Accesses                                   51
+     [exec]     Global Constants                                 0 (0.00%)
+     [exec]     Global Variables                                 0 (0.00%)
+     [exec]     Super-Global Variables                          51 (100.00%)
+     [exec]   Attribute Accesses                                17
+     [exec]     Non-Static                                      17 (100.00%)
+     [exec]     Static                                           0 (0.00%)
+     [exec]   Method Calls                                      69
+     [exec]     Non-Static                                      65 (94.20%)
+     [exec]     Static                                           4 (5.80%)
+     [exec] 
+     [exec] Structure
+     [exec]   Namespaces                                         0
+     [exec]   Interfaces                                         0
+     [exec]   Traits                                             0
+     [exec]   Classes                                            7
+     [exec]     Abstract Classes                                 0 (0.00%)
+     [exec]     Concrete Classes                                 7 (100.00%)
+     [exec]   Methods                                           23
+     [exec]     Scope
+     [exec]       Non-Static Methods                            23 (100.00%)
+     [exec]       Static Methods                                 0 (0.00%)
+     [exec]     Visibility
+     [exec]       Public Method                                 23 (100.00%)
+     [exec]       Non-Public Methods                             0 (0.00%)
+     [exec]   Functions                                          0
+     [exec]     Named Functions                                  0 (0.00%)
+     [exec]     Anonymous Functions                              0 (0.00%)
+     [exec]   Constants                                          1
+     [exec]     Global Constants                                 0 (0.00%)
+     [exec]     Class Constants                                  1 (100.00%)
+     [exec] 
+     [exec] Tests
+     [exec]   Classes                                            1
+     [exec]   Methods                                            4
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mpdepend:
+     [exec] PHP_Depend 1.1.4 by Manuel Pichler
+     [exec] 
+     [exec] Parsing source files:
+     [exec] ................................................                48
+     [exec] 
+     [exec] Executing Coupling-Analyzer:
+     [exec] .                                                               40
+     [exec] 
+     [exec] Executing CyclomaticComplexity-Analyzer:
+     [exec] ..                                                              42
+     [exec] 
+     [exec] Executing Dependency-Analyzer:
+     [exec] .                                                               32
+     [exec] 
+     [exec] Executing Inheritance-Analyzer:
+     [exec]                                                                  8
+     [exec] 
+     [exec] Executing NodeCount-Analyzer:
+     [exec] .                                                               31
+     [exec] 
+     [exec] Executing NodeLoc-Analyzer:
+     [exec] .                                                               39
+     [exec] 
+     [exec] Generating pdepend log files, this may take a moment.
+     [exec] 
+     [exec] Time: 00:01; Memory: 13.75Mb
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mphpmd-ci:
+     [exec] Result: 2
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mphpcs-ci:
+     [exec] Result: 1
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mphpcpd:
+     [exec] phpcpd 2.0.0 by Sebastian Bergmann.
+     [exec] 
+     [exec] 0.00% duplicated lines out of 1578 total lines of code.
+     [exec] 
+     [exec] Time: 42 ms, Memory: 3.50Mb
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mphpunit:
+     [exec] PHPUnit 4.1.1 by Sebastian Bergmann.
+     [exec] 
+     [exec] Configuration read from /var/jenkins/workspace/ecomm-docker/ecomm/build/phpunit.xml
+     [exec] 
+     [exec] ....
+     [exec] 
+     [exec] Time: 73 ms, Memory: 8.25Mb
+     [exec] 
+     [exec] OK (4 tests, 4 assertions)
+     [exec] 
+     [exec] Generating code coverage report in Clover XML format ... done
+     [exec] 
+     [exec] Generating Crap4J report XML file ... done
+     [exec] 
+     [exec] Generating code coverage report in HTML format ... done
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mphpdox:
+     [exec] phpDox 0.6.5 - Copyright (C) 2010 - 2016 by Arne Blankerts
+     [exec] 
+     [exec] [31.08.2016 - 12:56:30] Using config file './phpdox.xml'
+     [exec] [31.08.2016 - 12:56:30] Registered enricher 'build'
+     [exec] [31.08.2016 - 12:56:30] Registered enricher 'git'
+     [exec] [31.08.2016 - 12:56:30] Registered enricher 'checkstyle'
+     [exec] [31.08.2016 - 12:56:30] Registered enricher 'pmd'
+     [exec] [31.08.2016 - 12:56:30] Registered enricher 'phpunit'
+     [exec] [31.08.2016 - 12:56:30] Registered enricher 'phploc'
+     [exec] [31.08.2016 - 12:56:30] Registered output engine 'xml'
+     [exec] [31.08.2016 - 12:56:30] Registered output engine 'html'
+     [exec] [31.08.2016 - 12:56:30] Starting to process project 'Ecomm'
+     [exec] [31.08.2016 - 12:56:30] Starting collector
+     [exec] [31.08.2016 - 12:56:30] Scanning directory '../ecomm_project' for files to process
+     [exec] 
+     [exec] ................................................  	[48]
+     [exec] 
+     [exec] [31.08.2016 - 12:56:30] Saving results to directory 'phpdox'
+     [exec] [31.08.2016 - 12:56:30] Resolving inheritance
+     [exec] 
+     [exec] .......                                           	[7]
+     [exec] 
+     [exec] [31.08.2016 - 12:56:30] Collector process completed
+     [exec] 
+     [exec] [31.08.2016 - 12:56:30] Starting generator
+     [exec] [31.08.2016 - 12:56:30] Loading enrichers
+     [exec] [31.08.2016 - 12:56:30] Enricher Build Information initialized successfully
+     [exec] [31.08.2016 - 12:56:30] Enricher GIT information initialized successfully
+     [exec] [31.08.2016 - 12:56:30] Enricher PHPLoc xml initialized successfully
+     [exec] [31.08.2016 - 12:56:30] Enricher CheckStyle XML initialized successfully
+     [exec] [31.08.2016 - 12:56:30] Enricher PHPMessDetector XML initialized successfully
+     [exec] [31.08.2016 - 12:56:30] Starting event loop.
+     [exec] 
+     [exec] ..................................................	[50]
+     [exec] ..                                                	[52]
+     [exec] 
+     [exec] [31.08.2016 - 12:56:30] Generator process completed
+     [exec] [31.08.2016 - 12:56:30] Processing project 'Ecomm' completed.
+     [exec] 
+     [exec] 
+     [exec] Time: 0 seconds, Memory: 7.25Mb
+     [exec] 
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mzip:
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD SUCCESSFUL
+Total time: 4 seconds
+[ecomm-docker] $ /bin/sh -xe /tmp/hudson7749939117841531885.sh
++ whoami
+ubuntu
+[ecomm-docker] $ docker build -t kuldeepdarmwal/ecomm-app-docker:3 --pull=true /var/jenkins/workspace/ecomm-docker
+Sending build context to Docker daemon 557.1 kBSending build context to Docker daemon 1.114 MBSending build context to Docker daemon 1.671 MBSending build context to Docker daemon 2.228 MBSending build context to Docker daemon 2.785 MBSending build context to Docker daemon 3.342 MBSending build context to Docker daemon 3.899 MBSending build context to Docker daemon 4.456 MBSending build context to Docker daemon 5.014 MBSending build context to Docker daemon 5.571 MBSending build context to Docker daemon 6.128 MBSending build context to Docker daemon 6.685 MBSending build context to Docker daemon 7.242 MBSending build context to Docker daemon 7.799 MBSending build context to Docker daemon 8.356 MBSending build context to Docker daemon 8.913 MBSending build context to Docker daemon  9.47 MBSending build context to Docker daemon 10.03 MBSending build context to Docker daemon 10.58 MBSending build context to Docker daemon 11.14 MBSending build context to Docker daemon  11.7 MBSending build context to Docker daemon 12.26 MBSending build context to Docker daemon 12.81 MBSending build context to Docker daemon 13.37 MBSending build context to Docker daemon 13.93 MBSending build context to Docker daemon 14.48 MBSending build context to Docker daemon 15.04 MBSending build context to Docker daemon  15.6 MBSending build context to Docker daemon 16.15 MBSending build context to Docker daemon 16.71 MBSending build context to Docker daemon 17.27 MBSending build context to Docker daemon 17.83 MBSending build context to Docker daemon 18.38 MBSending build context to Docker daemon 18.94 MBSending build context to Docker daemon  19.5 MBSending build context to Docker daemon 20.05 MBSending build context to Docker daemon 20.61 MBSending build context to Docker daemon 21.17 MBSending build context to Docker daemon 21.73 MBSending build context to Docker daemon 22.28 MBSending build context to Docker daemon 22.84 MBSending build context to Docker daemon  23.4 MBSending build context to Docker daemon 23.95 MBSending build context to Docker daemon 24.51 MBSending build context to Docker daemon 24.55 MB
+Step 1 : FROM ubuntu:14.04
+14.04: Pulling from library/ubuntu
+862a3e9af0ae: Pulling fs layer
+6498e51874bf: Pulling fs layer
+159ebdd1959b: Pulling fs layer
+0fdbedd3771a: Pulling fs layer
+7a1f7116d1e3: Pulling fs layer
+0fdbedd3771a: Waiting
+7a1f7116d1e3: Waiting
+159ebdd1959b: Verifying Checksum
+159ebdd1959b: Download complete
+6498e51874bf: Verifying Checksum
+6498e51874bf: Download complete
+0fdbedd3771a: Verifying Checksum
+0fdbedd3771a: Download complete
+7a1f7116d1e3: Verifying Checksum
+7a1f7116d1e3: Download complete
+862a3e9af0ae: Verifying Checksum
+862a3e9af0ae: Download complete
+862a3e9af0ae: Pull complete
+6498e51874bf: Pull complete
+159ebdd1959b: Pull complete
+0fdbedd3771a: Pull complete
+7a1f7116d1e3: Pull complete
+Digest: sha256:5b5d48912298181c3c80086e7d3982029b288678fccabf2265899199c24d7f89
+Status: Downloaded newer image for ubuntu:14.04
+ ---> 4a725d3b3b1c
+Step 2 : MAINTAINER kuldeepd@cybage.com
+ ---> Running in 74da331d1a7d
+ ---> a57a71bb5d6f
+Removing intermediate container 74da331d1a7d
+Step 3 : RUN apt-get update
+ ---> Running in 08b2989acfe3
+Ign http://archive.ubuntu.com trusty InRelease
+Get:1 http://archive.ubuntu.com trusty-updates InRelease [65.9 kB]
+Get:2 http://archive.ubuntu.com trusty-security InRelease [65.9 kB]
+Get:3 http://archive.ubuntu.com trusty Release.gpg [933 B]
+Get:4 http://archive.ubuntu.com trusty-updates/main Sources [472 kB]
+Get:5 http://archive.ubuntu.com trusty-updates/restricted Sources [5247 B]
+Get:6 http://archive.ubuntu.com trusty-updates/universe Sources [205 kB]
+Get:7 http://archive.ubuntu.com trusty-updates/main amd64 Packages [1112 kB]
+Get:8 http://archive.ubuntu.com trusty-updates/restricted amd64 Packages [23.5 kB]
+Get:9 http://archive.ubuntu.com trusty-updates/universe amd64 Packages [480 kB]
+Get:10 http://archive.ubuntu.com trusty Release [58.5 kB]
+Get:11 http://archive.ubuntu.com trusty-security/main Sources [151 kB]
+Get:12 http://archive.ubuntu.com trusty-security/restricted Sources [3944 B]
+Get:13 http://archive.ubuntu.com trusty-security/universe Sources [47.0 kB]
+Get:14 http://archive.ubuntu.com trusty-security/main amd64 Packages [652 kB]
+Get:15 http://archive.ubuntu.com trusty-security/restricted amd64 Packages [20.2 kB]
+Get:16 http://archive.ubuntu.com trusty-security/universe amd64 Packages [176 kB]
+Get:17 http://archive.ubuntu.com trusty/main Sources [1335 kB]
+Get:18 http://archive.ubuntu.com trusty/restricted Sources [5335 B]
+Get:19 http://archive.ubuntu.com trusty/universe Sources [7926 kB]
+Get:20 http://archive.ubuntu.com trusty/main amd64 Packages [1743 kB]
+Get:21 http://archive.ubuntu.com trusty/restricted amd64 Packages [16.0 kB]
+Get:22 http://archive.ubuntu.com trusty/universe amd64 Packages [7589 kB]
+Fetched 22.2 MB in 9s (2374 kB/s)
+Reading package lists...
+ ---> e845f483e7c1
+Removing intermediate container 08b2989acfe3
+Step 4 : RUN apt-get install -y nano apache2 apache2-utils
+ ---> Running in 35445ce0f3dc
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  apache2-bin apache2-data libapr1 libaprutil1 libaprutil1-dbd-sqlite3
+  libaprutil1-ldap libasn1-8-heimdal libgssapi3-heimdal libhcrypto4-heimdal
+  libheimbase1-heimdal libheimntlm0-heimdal libhx509-5-heimdal
+  libkrb5-26-heimdal libldap-2.4-2 libroken18-heimdal libsasl2-2
+  libsasl2-modules libsasl2-modules-db libwind0-heimdal libxml2 openssl
+  sgml-base ssl-cert xml-core
+Suggested packages:
+  www-browser apache2-doc apache2-suexec-pristine apache2-suexec-custom ufw
+  libsasl2-modules-otp libsasl2-modules-ldap libsasl2-modules-sql
+  libsasl2-modules-gssapi-mit libsasl2-modules-gssapi-heimdal spell
+  ca-certificates sgml-base-doc openssl-blacklist debhelper
+The following NEW packages will be installed:
+  apache2 apache2-bin apache2-data apache2-utils libapr1 libaprutil1
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap libasn1-8-heimdal
+  libgssapi3-heimdal libhcrypto4-heimdal libheimbase1-heimdal
+  libheimntlm0-heimdal libhx509-5-heimdal libkrb5-26-heimdal libldap-2.4-2
+  libroken18-heimdal libsasl2-2 libsasl2-modules libsasl2-modules-db
+  libwind0-heimdal libxml2 nano openssl sgml-base ssl-cert xml-core
+0 upgraded, 27 newly installed, 0 to remove and 0 not upgraded.
+Need to get 3714 kB of archives.
+After this operation, 13.5 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libroken18-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.1 [40.0 kB]
+Get:2 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libasn1-8-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.1 [161 kB]
+Get:3 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libhcrypto4-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.1 [83.9 kB]
+Get:4 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libheimbase1-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.1 [28.9 kB]
+Get:5 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libwind0-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.1 [47.8 kB]
+Get:6 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libhx509-5-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.1 [104 kB]
+Get:7 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libkrb5-26-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.1 [196 kB]
+Get:8 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libheimntlm0-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.1 [15.2 kB]
+Get:9 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libgssapi3-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.1 [89.8 kB]
+Get:10 http://archive.ubuntu.com/ubuntu/ trusty/main libsasl2-modules-db amd64 2.1.25.dfsg1-17build1 [14.9 kB]
+Get:11 http://archive.ubuntu.com/ubuntu/ trusty/main libsasl2-2 amd64 2.1.25.dfsg1-17build1 [56.5 kB]
+Get:12 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libldap-2.4-2 amd64 2.4.31-1+nmu2ubuntu8.3 [153 kB]
+Get:13 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libxml2 amd64 2.9.1+dfsg1-3ubuntu4.8 [573 kB]
+Get:14 http://archive.ubuntu.com/ubuntu/ trusty/main sgml-base all 1.26+nmu4ubuntu1 [12.5 kB]
+Get:15 http://archive.ubuntu.com/ubuntu/ trusty/main libapr1 amd64 1.5.0-1 [85.1 kB]
+Get:16 http://archive.ubuntu.com/ubuntu/ trusty/main libaprutil1 amd64 1.5.3-1 [76.4 kB]
+Get:17 http://archive.ubuntu.com/ubuntu/ trusty/main libsasl2-modules amd64 2.1.25.dfsg1-17build1 [64.3 kB]
+Get:18 http://archive.ubuntu.com/ubuntu/ trusty/main nano amd64 2.2.6-1ubuntu1 [194 kB]
+Get:19 http://archive.ubuntu.com/ubuntu/ trusty-updates/main openssl amd64 1.0.1f-1ubuntu2.19 [490 kB]
+Get:20 http://archive.ubuntu.com/ubuntu/ trusty/main xml-core all 0.13+nmu2 [23.3 kB]
+Get:21 http://archive.ubuntu.com/ubuntu/ trusty/main libaprutil1-dbd-sqlite3 amd64 1.5.3-1 [10.5 kB]
+Get:22 http://archive.ubuntu.com/ubuntu/ trusty/main libaprutil1-ldap amd64 1.5.3-1 [8634 B]
+Get:23 http://archive.ubuntu.com/ubuntu/ trusty-updates/main apache2-bin amd64 2.4.7-1ubuntu4.13 [839 kB]
+Get:24 http://archive.ubuntu.com/ubuntu/ trusty-updates/main apache2-data all 2.4.7-1ubuntu4.13 [160 kB]
+Get:25 http://archive.ubuntu.com/ubuntu/ trusty-updates/main apache2 amd64 2.4.7-1ubuntu4.13 [87.4 kB]
+Get:26 http://archive.ubuntu.com/ubuntu/ trusty-updates/main apache2-utils amd64 2.4.7-1ubuntu4.13 [82.2 kB]
+Get:27 http://archive.ubuntu.com/ubuntu/ trusty/main ssl-cert all 1.0.33 [16.6 kB]
+[91mdebconf: unable to initialize frontend: Dialog
+[0m[91mdebconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+[0m[91mdebconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+[0m[91mdebconf: falling back to frontend: Teletype
+[0m[91mdpkg-preconfigure: unable to re-open stdin: 
+[0mFetched 3714 kB in 3s (1193 kB/s)
+Selecting previously unselected package libroken18-heimdal:amd64.
+(Reading database ... 11558 files and directories currently installed.)
+Preparing to unpack .../libroken18-heimdal_1.6~git20131207+dfsg-1ubuntu1.1_amd64.deb ...
+Unpacking libroken18-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.1) ...
+Selecting previously unselected package libasn1-8-heimdal:amd64.
+Preparing to unpack .../libasn1-8-heimdal_1.6~git20131207+dfsg-1ubuntu1.1_amd64.deb ...
+Unpacking libasn1-8-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.1) ...
+Selecting previously unselected package libhcrypto4-heimdal:amd64.
+Preparing to unpack .../libhcrypto4-heimdal_1.6~git20131207+dfsg-1ubuntu1.1_amd64.deb ...
+Unpacking libhcrypto4-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.1) ...
+Selecting previously unselected package libheimbase1-heimdal:amd64.
+Preparing to unpack .../libheimbase1-heimdal_1.6~git20131207+dfsg-1ubuntu1.1_amd64.deb ...
+Unpacking libheimbase1-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.1) ...
+Selecting previously unselected package libwind0-heimdal:amd64.
+Preparing to unpack .../libwind0-heimdal_1.6~git20131207+dfsg-1ubuntu1.1_amd64.deb ...
+Unpacking libwind0-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.1) ...
+Selecting previously unselected package libhx509-5-heimdal:amd64.
+Preparing to unpack .../libhx509-5-heimdal_1.6~git20131207+dfsg-1ubuntu1.1_amd64.deb ...
+Unpacking libhx509-5-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.1) ...
+Selecting previously unselected package libkrb5-26-heimdal:amd64.
+Preparing to unpack .../libkrb5-26-heimdal_1.6~git20131207+dfsg-1ubuntu1.1_amd64.deb ...
+Unpacking libkrb5-26-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.1) ...
+Selecting previously unselected package libheimntlm0-heimdal:amd64.
+Preparing to unpack .../libheimntlm0-heimdal_1.6~git20131207+dfsg-1ubuntu1.1_amd64.deb ...
+Unpacking libheimntlm0-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.1) ...
+Selecting previously unselected package libgssapi3-heimdal:amd64.
+Preparing to unpack .../libgssapi3-heimdal_1.6~git20131207+dfsg-1ubuntu1.1_amd64.deb ...
+Unpacking libgssapi3-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.1) ...
+Selecting previously unselected package libsasl2-modules-db:amd64.
+Preparing to unpack .../libsasl2-modules-db_2.1.25.dfsg1-17build1_amd64.deb ...
+Unpacking libsasl2-modules-db:amd64 (2.1.25.dfsg1-17build1) ...
+Selecting previously unselected package libsasl2-2:amd64.
+Preparing to unpack .../libsasl2-2_2.1.25.dfsg1-17build1_amd64.deb ...
+Unpacking libsasl2-2:amd64 (2.1.25.dfsg1-17build1) ...
+Selecting previously unselected package libldap-2.4-2:amd64.
+Preparing to unpack .../libldap-2.4-2_2.4.31-1+nmu2ubuntu8.3_amd64.deb ...
+Unpacking libldap-2.4-2:amd64 (2.4.31-1+nmu2ubuntu8.3) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3ubuntu4.8_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3ubuntu4.8) ...
+Selecting previously unselected package sgml-base.
+Preparing to unpack .../sgml-base_1.26+nmu4ubuntu1_all.deb ...
+Unpacking sgml-base (1.26+nmu4ubuntu1) ...
+Selecting previously unselected package libapr1:amd64.
+Preparing to unpack .../libapr1_1.5.0-1_amd64.deb ...
+Unpacking libapr1:amd64 (1.5.0-1) ...
+Selecting previously unselected package libaprutil1:amd64.
+Preparing to unpack .../libaprutil1_1.5.3-1_amd64.deb ...
+Unpacking libaprutil1:amd64 (1.5.3-1) ...
+Selecting previously unselected package libsasl2-modules:amd64.
+Preparing to unpack .../libsasl2-modules_2.1.25.dfsg1-17build1_amd64.deb ...
+Unpacking libsasl2-modules:amd64 (2.1.25.dfsg1-17build1) ...
+Selecting previously unselected package nano.
+Preparing to unpack .../nano_2.2.6-1ubuntu1_amd64.deb ...
+Unpacking nano (2.2.6-1ubuntu1) ...
+Selecting previously unselected package openssl.
+Preparing to unpack .../openssl_1.0.1f-1ubuntu2.19_amd64.deb ...
+Unpacking openssl (1.0.1f-1ubuntu2.19) ...
+Selecting previously unselected package xml-core.
+Preparing to unpack .../xml-core_0.13+nmu2_all.deb ...
+Unpacking xml-core (0.13+nmu2) ...
+Selecting previously unselected package libaprutil1-dbd-sqlite3:amd64.
+Preparing to unpack .../libaprutil1-dbd-sqlite3_1.5.3-1_amd64.deb ...
+Unpacking libaprutil1-dbd-sqlite3:amd64 (1.5.3-1) ...
+Selecting previously unselected package libaprutil1-ldap:amd64.
+Preparing to unpack .../libaprutil1-ldap_1.5.3-1_amd64.deb ...
+Unpacking libaprutil1-ldap:amd64 (1.5.3-1) ...
+Selecting previously unselected package apache2-bin.
+Preparing to unpack .../apache2-bin_2.4.7-1ubuntu4.13_amd64.deb ...
+Unpacking apache2-bin (2.4.7-1ubuntu4.13) ...
+Selecting previously unselected package apache2-data.
+Preparing to unpack .../apache2-data_2.4.7-1ubuntu4.13_all.deb ...
+Unpacking apache2-data (2.4.7-1ubuntu4.13) ...
+Selecting previously unselected package apache2.
+Preparing to unpack .../apache2_2.4.7-1ubuntu4.13_amd64.deb ...
+Unpacking apache2 (2.4.7-1ubuntu4.13) ...
+Selecting previously unselected package apache2-utils.
+Preparing to unpack .../apache2-utils_2.4.7-1ubuntu4.13_amd64.deb ...
+Unpacking apache2-utils (2.4.7-1ubuntu4.13) ...
+Selecting previously unselected package ssl-cert.
+Preparing to unpack .../ssl-cert_1.0.33_all.deb ...
+Unpacking ssl-cert (1.0.33) ...
+Processing triggers for ureadahead (0.100.0-16) ...
+Setting up libroken18-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.1) ...
+Setting up libasn1-8-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.1) ...
+Setting up libhcrypto4-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.1) ...
+Setting up libheimbase1-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.1) ...
+Setting up libwind0-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.1) ...
+Setting up libhx509-5-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.1) ...
+Setting up libkrb5-26-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.1) ...
+Setting up libheimntlm0-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.1) ...
+Setting up libgssapi3-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.1) ...
+Setting up libsasl2-modules-db:amd64 (2.1.25.dfsg1-17build1) ...
+Setting up libsasl2-2:amd64 (2.1.25.dfsg1-17build1) ...
+Setting up libldap-2.4-2:amd64 (2.4.31-1+nmu2ubuntu8.3) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3ubuntu4.8) ...
+Setting up sgml-base (1.26+nmu4ubuntu1) ...
+Setting up libapr1:amd64 (1.5.0-1) ...
+Setting up libaprutil1:amd64 (1.5.3-1) ...
+Setting up libsasl2-modules:amd64 (2.1.25.dfsg1-17build1) ...
+Setting up nano (2.2.6-1ubuntu1) ...
+update-alternatives: using /bin/nano to provide /usr/bin/editor (editor) in auto mode
+update-alternatives: using /bin/nano to provide /usr/bin/pico (pico) in auto mode
+Setting up openssl (1.0.1f-1ubuntu2.19) ...
+Setting up xml-core (0.13+nmu2) ...
+Setting up libaprutil1-dbd-sqlite3:amd64 (1.5.3-1) ...
+Setting up libaprutil1-ldap:amd64 (1.5.3-1) ...
+Setting up apache2-bin (2.4.7-1ubuntu4.13) ...
+Setting up apache2-data (2.4.7-1ubuntu4.13) ...
+Setting up apache2 (2.4.7-1ubuntu4.13) ...
+[8mha:AAAAsB+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhQLmEw0k/Ozy0oLUkt0s9KzcvOzCtWNTIozkksSwXSjr6eQFIjUzfVOCXVPDXFSFM/Jz8dADAkHGe3AAAA[0mSlave went offline during the build
+ERROR: Connection was broken: java.io.IOException: Unexpected termination of the channel
+	at hudson.remoting.SynchronousCommandTransport$ReaderThread.run(SynchronousCommandTransport.java:50)
+Caused by: java.io.EOFException
+	at java.io.ObjectInputStream$PeekInputStream.readFully(ObjectInputStream.java:2353)
+	at java.io.ObjectInputStream$BlockDataInputStream.readShort(ObjectInputStream.java:2822)
+	at java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:804)
+	at java.io.ObjectInputStream.<init>(ObjectInputStream.java:301)
+	at hudson.remoting.ObjectInputStreamEx.<init>(ObjectInputStreamEx.java:48)
+	at hudson.remoting.AbstractSynchronousByteArrayCommandTransport.read(AbstractSynchronousByteArrayCommandTransport.java:34)
+	at hudson.remoting.SynchronousCommandTransport$ReaderThread.run(SynchronousCommandTransport.java:48)
+
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mBuild step 'Docker Build and Publish' marked build as failure
+Finished: FAILURE
